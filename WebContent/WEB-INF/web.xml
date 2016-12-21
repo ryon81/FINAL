@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   
- <display-name>Model2-Board</display-name>
+ <display-name>FINAL-PROJECT</display-name>
  
  <servlet>
-  	<servlet-name>BoardFrontController</servlet-name>
-  	<servlet-class>net.board.action.BoardFrontController</servlet-class>
+  	<servlet-name>FrontController</servlet-name>
+  	<servlet-class>net.account.action.FrontController</servlet-class>
  </servlet>  
  <servlet-mapping>
-  	<servlet-name>BoardFrontController</servlet-name>
-  	<url-pattern>*.bo</url-pattern>
+  	<servlet-name>FrontController</servlet-name>
+  	<url-pattern>*.aj</url-pattern>
  </servlet-mapping>
   
    

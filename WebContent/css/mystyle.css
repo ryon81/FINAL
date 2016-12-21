@@ -1,0 +1,29 @@
+@CHARSET "EUC-KR";
+
+#header 
+{
+	background-color: yellow;
+	width: 100%;
+	height: 50px;	
+}
+#nav 
+{
+	width: 15%;
+	background-color: red;
+	height: 100px; 
+	float: left
+}
+#content 
+{
+	width: 85%;
+	background-color: orange;
+	float: right;
+	height: 100px; 
+}
+#footer 
+{
+	background-color: aqua;
+	width: 100%;
+	height: 50px;
+	clear: both;
+}
