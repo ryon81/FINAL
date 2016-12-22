@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>가계부</title>
-<link type="text/css" rel="stylesheet" href="css/mystyle.css">
+<link type="text/css" rel="stylesheet" href="./css/mystyle.css">
 </head>
 <body>
 

@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="login.jsp>"> Login</a> |
-<a href="join.jsp>"> Join</a>
+	<div align = "left">&nbsp;&nbsp;AJ °¡°èºÎ </div>
+	<table align = "right">
+		<tr>
+			<td> <a href="login.jsp>"> Login</a> |</td>
+			<td> <a href="join.jsp>"> Join</a> </td>
+		</tr>		
+	</table>
 </body>
 </html>

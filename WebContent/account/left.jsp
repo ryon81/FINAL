@@ -7,9 +7,29 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-<a href="./template.jsp?page=spend">지출</a><br><br>
-<a href="./template.jsp?page=bestitem"> 인기상품</a><br><br>
-</center>
+<ul> 
+<li><a href="./index.jsp?page=spend">지출</a></li>
+<li><a href="./index.jsp?page=report">보고서</a></li>
+<li><a href="./index.jsp?page=budget">예산</a></li>
+<li><a href="./index.jsp?page=money">자산관리</a></li>
+</ul>
+<hr>
+
+<table>
+	<tr>
+		<td colspan="2">이달의 가계</td>
+	</tr>
+	<tr>
+		<td> 수입</td>
+		<td> 0 </td>
+	</tr>
+	<tr>
+		<td> 지출</td>
+		<td> 0 </td>
+	</tr>
+
+</table>
+
+<hr>
 </body>
 </html>
