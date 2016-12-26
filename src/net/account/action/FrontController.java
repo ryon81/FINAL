@@ -18,12 +18,12 @@ public class FrontController extends javax.servlet.http.HttpServlet implements j
 		ActionForward forward = null;
 		Action action = null;
 		
-		if(command.equals("/AccoutWrite.aj"))
+		if(command.equals("/AccountExpenseView.aj"))
 		{
 			forward = new ActionForward();
 			forward.setRedirect(false);
-			forward.setPath("./board/qna_board_write.jsp");
-		} else if (command.equals("/BoardReplyAction.bo"))
+			forward.setPath("./account/spend.jsp");
+		} /*else if (command.equals("/BoardReplyAction.bo"))
 		{
 			action = new AccoutReplyAction();
 			try
@@ -107,9 +107,10 @@ public class FrontController extends javax.servlet.http.HttpServlet implements j
 			} catch (Exception e)
 			{
 				e.printStackTrace();
-			}			
+			}
+					
 		}
-		
+		*/
 		if(forward != null)
 		{	
 			if(forward.isRedirect())
