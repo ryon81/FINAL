@@ -214,7 +214,7 @@ public class AccountDAO
 			pstmt = con.prepareStatement(sql);
 			pstmt.setLong(1, account.getEXP_SQ());
 			pstmt.setLong(2, account.getUSER_NO());
-			pstmt.setInt(3, account.getAMOUNTS());
+			pstmt.setLong(3, account.getAMOUNTS());
 			pstmt.setString(4, account.getMEMO());
 			pstmt.setLong(5, account.getACCOUNTNO());
 			pstmt.setLong(6, account.getCATEGORYNO());

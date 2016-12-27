@@ -30,7 +30,7 @@
 					</tr>
 					<tr>
 						<td>
-							항목 <%=accbn.getEXP_DATE() %>
+							항목 <%-- <%=accbn.getEXP_DATE() %> --%>
 						</td>
 					</tr>
 					<tr>
