@@ -2,7 +2,7 @@
     pageEncoding="EUC-KR"%>
 <%@ page import = "net.account.db.*" %>
 <%
-	AccountBean accbn = (AccountBean)request.getAttribute("actdata");
+	AccountBean accbn = (AccountBean)request.getAttribute("page");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -15,22 +15,26 @@
 <body>
 	<table border = "1" width = "100%" height = "100%">
 		<tr>
-			<td align = "center"> 날짜 입력 </td>			
+			<td align = "center"> <label for="sDate">시작날짜</label> <input id="sDate" type="date" value="yyyy-mm-dd">
+			 </td>
+			 <td align = "center"> <label for="eDate">종료날짜</label> <input id="eDate" type="date" value="yyyy-mm-dd">
+			 <input id="apply" type="submit" value="적용"/>
+			 </td>			
 		</tr>
 		<tr>
-			<td align = "left"> 탭 </td>
+			<td colspan = "2" align = "left">  
+				<jsp:include page="chart_exp.jsp"/>
+			</td>
 		</tr>
 		<tr>
-			<td>
+			<td colspan = "2">
 				<table border = "0" width = "100%">
 					<tr>
-						<td>
-							그래프
-						</td>
+						
 					</tr>
 					<tr>
 						<td>
-							항목 <%-- <%=accbn.getEXP_DATE() %> --%>
+							항목 <%-- <%=accbn.getMEMO() %> --%>
 						</td>
 					</tr>
 					<tr>

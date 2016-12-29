@@ -11,17 +11,17 @@
 #nav 
 {
 	width: 15%;
-	background-color: #D5D5D5;
+	background-color: #F6F6F6;
 	height: 100%; 
 	float: left;
-	font-size: 20px;
+	font-size: 14px;	
 }
 
 #nav ul
 {
 	list-style: none;
-	text-align: center;
-	padding: 10px 0;
+	text-align: left;
+	padding: 5px 0;
 }
 
 #nav ul li
@@ -39,7 +39,7 @@
 
 #nav ul li a:hover
 {
-	background:#BDBDBD; 
+	background:#6799FF; 
 }
 
 #content 

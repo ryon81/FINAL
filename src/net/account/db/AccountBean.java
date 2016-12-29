@@ -23,7 +23,7 @@ public class AccountBean
 	private String USAGE;
 	
 	//----------INCOME 테이블 컬럼 정보-----------
-	private long AMOUNTS;	
+	private long AMOUNTS;
 	private String MEMO;
 	private Date INC_DATE;	
 	private long CATEGORYNO;
@@ -173,6 +173,11 @@ public class AccountBean
 	}
 	public void setBUDGET(int bUDGET) {
 		BUDGET = bUDGET;
-	}	
+	}
+	
+	
+		
+	
+		
 		
 }

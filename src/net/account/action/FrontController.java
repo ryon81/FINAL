@@ -7,7 +7,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 public class FrontController extends javax.servlet.http.HttpServlet implements javax.servlet.Servlet 
 { 
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -17,12 +16,19 @@ public class FrontController extends javax.servlet.http.HttpServlet implements j
 		String command = RequestURI.substring(contextPath.length());
 		ActionForward forward = null;
 		Action action = null;
+		System.out.println(command);
 		
 		if(command.equals("/AccountExpenseView.aj"))
-		{
-			forward = new ActionForward();
-			forward.setRedirect(false);
-			forward.setPath("./account/spend.jsp");
+		{			
+			action = new AccountExpenseView();
+			try
+			{
+				forward = action.execute(request, response);
+			} catch (Exception e)
+			{
+				e.printStackTrace();
+			}
+			
 		} /*else if (command.equals("/BoardReplyAction.bo"))
 		{
 			action = new AccoutReplyAction();

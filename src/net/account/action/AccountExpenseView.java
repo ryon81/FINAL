@@ -33,7 +33,7 @@ public class AccountExpenseView implements Action
 		
 		request.setAttribute("actdata", actdata);
 		forward.setRedirect(false);
-		forward.setPath("./account/spend.jsp");
+		forward.setPath("./account/index.jsp");
 		return forward;
 	}
 	
